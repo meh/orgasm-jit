@@ -11,7 +11,7 @@ true
 >> Orgasm::JIT::Function.new(:int, [], "\x55\x48\x8b\xec\x48\xc7\xc0\x00\x04\x00\x00\x48\x8b\xe5\x5d\xc3").call
 1024
 >> # The following call uses Intel 32 bit opcode, if you're on a 64 bit system it will probably segfault
->> Orgasm::JIT::Function.new([], :int, Orgasm::Architecture.x86.i686.generator.do {
+>> Orgasm::JIT::Function.new(:int, [], Orgasm::Architecture.x86.i686.generator.do {
 	push ebp
 	mov  ebp, esp
 
