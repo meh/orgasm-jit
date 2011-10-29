@@ -2,7 +2,7 @@ Kernel.load 'lib/orgasm/jit/version.rb'
 
 Gem::Specification.new {|s|
 	s.name         = 'orgasm-jit'
-	s.version      = Orgasm.version
+	s.version      = Orgasm::JIT.version
 	s.author       = 'meh.'
 	s.email        = 'meh@paranoici.org'
 	s.homepage     = 'http://github.com/meh/orgasm-jit'
